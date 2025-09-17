@@ -85,8 +85,7 @@
   width: 100%;
   height: auto;
   border-radius: 15px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media (min-width: 768px) {
   .hero {
@@ -152,4 +151,6 @@ body {
 
 img {
   max-width: 100%;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
