@@ -93,16 +93,50 @@
 
   &__images {
     flex: 1;
-    display: grid;
+    display: grid; // Mantengo grid como referencia, pero usaremos absolute
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto); // 2 filas iniciales
     grid-gap: 10px;
     max-width: 500px;
+    position: relative; // Contexto para posicionamiento absoluto
 
     img {
-      width: 100%;
+      width: 150px; // Aproximado para tablet/PC
       height: auto;
-      border-radius: 15px;
+      border-radius: 50px;
       object-fit: cover;
+      position: absolute; // Posicionamiento absoluto dentro de __images
+    }
+
+    // Posiciones para tablet/PC
+    img:nth-child(1) { // Imagen 1
+      top: -313px;
+      left: 0;
+      background-color: abs.$purple;
+    }
+    
+    img:nth-child(2) { // Imagen 2
+      top: -313px;
+      left: 160px;
+      background-color: abs.$cyan;
+    }
+    
+    img:nth-child(3) { // Imagen 3
+      top: -236px;
+      left: 320px;
+      background-color: abs.$yellow;
+    }
+    
+    img:nth-child(4) { // Imagen 4
+      top: -140px;
+      left: 160px;
+      background-color: abs.$orange;
+    }
+    
+    img:nth-child(5) { // Imagen 5
+      top: 30px;
+      left: 0;
+      background-color: abs.$pink;
     }
   }
 
@@ -165,8 +199,40 @@ $mobile-breakpoint: abs.$bp-tablet - 1px; // Usando el namespace para la variabl
     }
 
     &__images {
-      grid-template-columns: 1fr 1fr;
-      max-width: 100%;
+      max-width: 100%; // Ajusta al ancho de la pantalla
+      img {
+        width: 100px; // Reduce el tamaño en móviles
+      }
+
+      img:nth-child(1) {
+        top: 0;
+        left: 0;
+        background-color: abs.$purple;
+      }
+      
+      img:nth-child(2) {
+        top: 110px; // 100px (ancho) + 10px (gap aproximado)
+        left: 0;
+        background-color: abs.$cyan;
+      }
+      
+      img:nth-child(3) {
+        top: 220px; // 110px + 110px
+        left: 0;
+        background-color: abs.$yellow;
+      }
+      
+      img:nth-child(4) {
+        top: 330px; // 220px + 110px
+        left: 0;
+        background-color: abs.$orange;
+      }
+      
+      img:nth-child(5) {
+        top: 440px; // 330px + 110px
+        left: 0;
+        background-color: abs.$pink;
+      }
     }
   }
 }

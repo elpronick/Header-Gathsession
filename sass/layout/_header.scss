@@ -1,1 +1,70 @@
 @use '../abstracts/index' as abs;
+@use 'sass:color';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: abs.$dark-grey;
+  color: #fff;
+
+  &__logo {
+    a {
+      text-decoration: none;
+      color: abs.$pink;
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-family: abs.$primary-font;
+    }
+  }
+
+  &__nav {
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin-left: 20px;
+
+        a {
+          text-decoration: none;
+          color: color.adjust(abs.$dark-grey, $lightness: 50%);
+          font-size: 1rem;
+          transition: color 0.3s;
+
+          &:hover {
+            color: abs.$pink;
+          }
+
+          &.active {
+            color: abs.$pink;
+            border-bottom: 2px solid abs.$pink;
+          }
+        }
+      }
+    }
+  }
+
+  // Media query para tablets y superiores
+  @include abs.breakpoint(tablet) {
+    padding: 15px 30px;
+
+    &__logo a {
+      font-size: 1.8rem;
+    }
+
+    &__nav ul li {
+      margin-left: 25px;
+    }
+  }
+
+  // Media query para desktops
+  @include abs.breakpoint(desktop) {
+    &__nav ul li a {
+      font-size: 1.1rem;
+    }
+  }
+}
