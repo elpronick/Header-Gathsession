@@ -56,7 +56,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 20px;
+  padding: 30px 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -65,7 +65,7 @@
   padding-right: 40px;
 }
 .hero__content h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
   color: #fff;
   margin-bottom: 20px;
@@ -80,19 +80,27 @@
 }
 .hero__stats {
   display: flex;
+  gap: 30px;
 }
 .hero__stats .stat {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .hero__stats .stat img {
   width: 40px;
   height: 40px;
   margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  border-radius: 10px;
 }
 .hero__stats .stat p {
   font-size: 0.9rem;
-  color: #2B2D38;
+  color: #fff;
   margin: 0;
+  padding: 0 0 0 10px;
 }
 .hero__images {
   flex: 1;
@@ -138,16 +146,15 @@
 }
 
 .hero__buttons {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 .hero__buttons .btn-primary {
   display: inline-block;
-  padding: 12px 25px;
-  background-color: #6E1FED;
+  padding: 15px 40px;
+  background-color: #DB2A6B;
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
-  margin-right: 15px;
+  border-radius: 10px 10px 10px 0;
   transition: background-color 0.3s;
 }
 .hero__buttons .btn-primary:hover {
@@ -155,18 +162,20 @@
 }
 .hero__buttons .btn-secondary {
   display: inline-block;
-  padding: 12px 25px;
+  padding: 15px 40px;
+  background-color: none;
   color: #fff;
   text-decoration: none;
+  border-radius: 10px 10px 10px 0;
   transition: background-color 0.3s;
+  text-decoration: underline;
+  padding: 5px 40px;
 }
 .hero__buttons .btn-secondary:hover {
-  background-color: rgb(98.3787878788, 102.9545454545, 128.1212121212);
-  border-radius: 5px;
+  background-color: rgb(86.979338843, 16.1404958678, 200.8595041322);
 }
 .hero__buttons .btn-secondary img {
   vertical-align: middle;
-  margin-left: 5px;
 }
 
 html * {

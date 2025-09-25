@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as *;
+@use 'sass:color';
 
 // INTERFACES--------------------
 @mixin breakpoint($bp) {
@@ -28,3 +29,16 @@
 }
 
 // MIXINS--------------------
+@mixin button($fondo: $pink) {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: $fondo;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px 10px 10px 0;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: color.adjust($purple, $lightness: -10%);
+  }
+}
