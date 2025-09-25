@@ -14,6 +14,12 @@
   font-weight: 700;
   font-family: "Merriweather", sans-serif;
 }
+.header__logo img {
+  transition: transform 0.3s ease;
+}
+.header__logo img:hover {
+  transform: scale(1.05);
+}
 .header__nav ul {
   list-style: none;
   display: flex;
@@ -94,6 +100,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease;
+}
+.hero__stats .stat:hover {
+  transform: scale(1.05);
 }
 .hero__stats .stat img {
   width: 40px;
@@ -125,6 +135,10 @@
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
+  transition: transform 0.3s ease;
+}
+.hero__images img:hover {
+  transform: scale(1.05);
 }
 .hero__images img:nth-child(1) {
   top: -200px;

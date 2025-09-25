@@ -18,6 +18,13 @@
       font-weight: 700;
       font-family: abs.$primary-font;
     }
+
+    img {
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
   }
 
   &__nav {
