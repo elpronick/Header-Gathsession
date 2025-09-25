@@ -1,3 +1,15 @@
-<svg width="949" height="817" viewBox="0 0 949 817" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle opacity="0.25" cx="551" cy="551" r="550.5" stroke="#E1E1E1"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1102 1102">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        isolation: isolate;
+        opacity: .25;
+        stroke: #e1e1e1;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M314.01,1048.02C128.6,959.45.5,770.18.5,551,.5,246.97,246.97.5,551,.5s550.5,246.47,550.5,550.5-246.47,550.5-550.5,550.5c-84.85,0-165.21-19.2-236.99-53.48"/>
+  <path class="cls-1" d="M447.2,999.03c-129.56-61.89-219.06-194.13-219.06-347.29,0-212.44,172.22-384.66,384.66-384.66s384.66,172.22,384.66,384.66-172.22,384.66-384.66,384.66c-59.29,0-115.44-13.41-165.59-37.37"/>
 </svg>

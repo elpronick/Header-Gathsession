@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 20px 75px;
+  padding-right: 150px;
   background-color: #2B2D38;
   color: #fff;
 }
@@ -27,6 +28,7 @@
   color: rgb(166.7575757576, 169.9090909091, 187.2424242424);
   font-size: 1rem;
   transition: color 0.3s;
+  position: relative;
 }
 .header__nav ul li a:hover {
   color: #DB2A6B;
@@ -35,21 +37,26 @@
   color: #DB2A6B;
   border-bottom: 2px solid #DB2A6B;
 }
-@media (min-width: 768px) {
-  .header {
-    padding: 15px 30px;
-  }
-  .header__logo a {
-    font-size: 1.8rem;
-  }
-  .header__nav ul li {
-    margin-left: 25px;
-  }
+.header__nav ul li:nth-child(1) a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 3px;
+  background-color: #DB2A6B;
 }
-@media (min-width: 1200px) {
-  .header__nav ul li a {
-    font-size: 1.1rem;
-  }
+.header__background {
+  position: absolute;
+  top: 180px;
+  right: -79px;
+  width: 600px;
+  height: 550px;
+  background-image: url(/img/ellipse.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 
 .hero {
@@ -62,7 +69,7 @@
 }
 .hero__content {
   flex: 1;
-  padding-right: 40px;
+  padding: 0 40px 0 56px;
 }
 .hero__content h1 {
   font-size: 3rem;
